@@ -1,0 +1,31 @@
+.main {
+  flex-grow: 1;
+}
+
+.main__container {
+  margin: 0 auto;
+  padding-top: 24px;
+  max-width: 376px;
+  padding-bottom: 20px !important;
+}
+
+.about__left {
+  width: 5.5%;
+}
+
+.about__main {
+  width: 94.5%;
+}
+
+.about__main_top {
+  border-bottom: 1px solid #000000;
+}
+
+.search, .brands, .about__brand_bottom {
+  border: 1px solid #000000;
+}
+
+.brands {
+  width: 32%;
+  height: 170px;
+}
