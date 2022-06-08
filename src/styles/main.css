@@ -341,6 +341,54 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../Assests/fonts/Roboto-Regular.woff2") format("woff2"), url("../Assests/fonts/Roboto-Regular.woff") format("woff"), url("../Assests/fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../Assests/fonts/Inter-Medium.woff2") format("woff2"), url("../Assests/fonts/Inter-Medium.woff") format("woff"), url("../Assests/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../Assests/fonts/Roboto-Medium.woff2") format("woff2"), url("../Assests/fonts/Roboto-Medium.woff") format("woff"), url("../Assests/fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../Assests/fonts/Inter-Regular.woff2") format("woff2"), url("../Assests/fonts/Inter-Regular.woff") format("woff"), url("../Assests/fonts/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../Assests/fonts/Inter-SemiBold.woff2") format("woff2"), url("../Assests/fonts/Inter-SemiBold.woff") format("woff"), url("../Assests/fonts/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url("../Assests/fonts/Inter-Bold.woff2") format("woff2"), url("../Assests/fonts/Inter-Bold.woff") format("woff"), url("../Assests/fonts/Inter-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   height: 100%;
   scroll-behavior: smooth;
@@ -365,7 +413,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100%;
-  font-family: "Aral", sans-serif;
+  font-family: "Inter", "Roboto";
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -380,6 +428,65 @@ img {
 .none {
   display: none;
   width: 1px;
+}
+
+.about__bils_title {
+  margin-bottom: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.1px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.line_box {
+  border-bottom: 0.752778px solid #a8a8a8;
+  margin-bottom: 15px;
+}
+
+.line__box_dashed {
+  border-bottom: 0.752778px dashed #a8a8a8;
+}
+
+.bils__item_title {
+  margin-bottom: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.0556px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.bils__item_desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.0444px;
+  line-height: 15px;
+  color: #5f5f5f;
+}
+
+.bils__item_title1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.0444px;
+  line-height: 15px;
+  color: #090808;
+}
+
+.blis_bottom_title {
+  font-weight: 500;
+  font-size: 16.0556px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.btn {
+  color: #000000;
+  background: #000;
 }
 
 .visually-hidden {
@@ -425,13 +532,37 @@ img {
   border-bottom: 1px solid #000000;
 }
 
-.search, .brands, .about__brand_bottom {
+.search,
+.brands,
+.about__brand_bottom {
   border: 1px solid #000000;
 }
 
 .brands {
   width: 32%;
   height: 170px;
+}
+
+.input:checked + .money-withdraw {
+  color: #2724ba;
+}
+
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
+  width: 86px !important;
+  margin: 5px !important;
+  border: 0.75278px solid linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), #ffffff;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #ffffff;
+  border-radius: 6.02222px !important;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Mui-selected {
+  color: #2724ba !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(60, 0, 187, 0.2)), to(rgba(60, 0, 187, 0.2))), #ffffff !important;
+  background: linear-gradient(0deg, rgba(60, 0, 187, 0.2), rgba(60, 0, 187, 0.2)), #ffffff !important;
+  border: 0.752778px solid #3c00bb !important;
 }
 
 .header__navlink.active {

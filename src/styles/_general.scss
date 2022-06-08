@@ -1,34 +1,92 @@
 html {
-    height: 100%;
-    scroll-behavior: smooth;
-    box-sizing :border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    font-family: "Aral", sans-serif ;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-family: "Inter", "Roboto";
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    max-width: 100%;
-    // height: auto;
-    vertical-align: middle;
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .none {
-    display: none;
-    width: 1px;
+  display: none;
+  width: 1px;
+}
+
+.about__bils_title {
+  margin-bottom: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27.1px;
+  line-height: 33px;
+  color: #000000;
+}
+
+.line_box {
+  border-bottom: 0.752778px solid #a8a8a8;
+  margin-bottom: 15px;
+}
+
+.line__box_dashed {
+  border-bottom: 0.752778px dashed #a8a8a8;
+}
+
+.bils__item_title {
+  margin-bottom: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.0556px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.bils__item_desc {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.0444px;
+  line-height: 15px;
+  color: #5f5f5f;
+}
+
+.bils__item_title1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.0444px;
+  line-height: 15px;
+  color: #090808;
+}
+
+.blis_bottom_title {
+  font-weight: 500;
+  font-size: 16.0556px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.btn {
+  color: #000000;
+  background: #000;
 }

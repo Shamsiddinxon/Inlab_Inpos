@@ -21,11 +21,38 @@
   border-bottom: 1px solid #000000;
 }
 
-.search, .brands, .about__brand_bottom {
+.search,
+.brands,
+.about__brand_bottom {
   border: 1px solid #000000;
 }
 
 .brands {
   width: 32%;
   height: 170px;
+}
+
+.input:checked + .money-withdraw {
+  color: #2724ba;
+}
+
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
+  width: 86px !important;
+  margin: 5px !important;
+  border: 0.752778px solid
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    #ffffff;
+  border-radius: 6.02222px !important;
+  transition: 0.2s;
+}
+.Mui-selected {
+  color: #2724ba !important;
+  background: linear-gradient(
+      0deg,
+      rgba(60, 0, 187, 0.2),
+      rgba(60, 0, 187, 0.2)
+    ),
+    #ffffff !important;
+  border: 0.752778px solid #3c00bb !important;
 }
