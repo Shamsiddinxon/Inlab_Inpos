@@ -547,14 +547,15 @@ img {
   color: #2724ba;
 }
 
-.css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root,
+.css-q5cu77 {
   width: 86px !important;
   max-width: 86px !important;
   min-width: 86px !important;
   margin: 5px !important;
-  border: 0.75278px solid linear-gradient(0deg, rgba(83, 81, 81, 0.2), rgba(121, 115, 115, 0.2)), #ffffff !important;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(83, 81, 81, 0.2)), to(rgba(121, 115, 115, 0.2))), #ffffff !important;
-  background: linear-gradient(0deg, rgba(83, 81, 81, 0.2), rgba(121, 115, 115, 0.2)), #ffffff !important;
+  border: 0.752778px solid #d9d9d9 !important;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), #ffffff !important;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #ffffff !important;
   border-radius: 6.02222px !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -565,6 +566,8 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(60, 0, 187, 0.2)), to(rgba(60, 0, 187, 0.2))), #ffffff !important;
   background: linear-gradient(0deg, rgba(60, 0, 187, 0.2), rgba(60, 0, 187, 0.2)), #ffffff !important;
   border: 0.752778px solid #3c00bb !important;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .header__navlink.active {
