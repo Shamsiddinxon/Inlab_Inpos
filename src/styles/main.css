@@ -549,10 +549,12 @@ img {
 
 .css-ueukts-MuiButtonBase-root-MuiToggleButton-root {
   width: 86px !important;
+  max-width: 86px !important;
+  min-width: 86px !important;
   margin: 5px !important;
   border: 0.75278px solid linear-gradient(0deg, rgba(83, 81, 81, 0.2), rgba(121, 115, 115, 0.2)), #ffffff !important;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(83, 81, 81, 0.2)), to(rgba(121, 115, 115, 0.2))), #ffffff;
-  background: linear-gradient(0deg, rgba(83, 81, 81, 0.2), rgba(121, 115, 115, 0.2)), #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(83, 81, 81, 0.2)), to(rgba(121, 115, 115, 0.2))), #ffffff !important;
+  background: linear-gradient(0deg, rgba(83, 81, 81, 0.2), rgba(121, 115, 115, 0.2)), #ffffff !important;
   border-radius: 6.02222px !important;
   -webkit-transition: 0.2s;
   transition: 0.2s;
