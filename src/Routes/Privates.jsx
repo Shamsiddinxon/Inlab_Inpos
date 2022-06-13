@@ -1,11 +1,17 @@
 import React from "react";
+import { Outlet,Navigate } from "react-router-dom"
+import useToken from "../Hooks/useToken"
 
 function Private() {
-  return (
-    <div className="Private mx-auto w-11/12">
-      <h2>Private</h2>
-    </div>
-  );
+const [token] = useToken()
+
+if (token !== "null" && token ) {
+  console.log(typeof token);
+  return <Outlet/>
+}
+console.log(typeof token);
+
+  return <Navigate to="/"/>
 }
 
 export default Private;

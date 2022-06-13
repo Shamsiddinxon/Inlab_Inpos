@@ -17,8 +17,13 @@
   width: 94.5%;
 }
 
+.about__main_ {
+  height: 100% !important;
+}
+
 .about__main_top {
   border-bottom: 1px solid #000000;
+  height: 10%;
 }
 
 .search,
@@ -38,10 +43,8 @@
 
 .css-ueukts-MuiButtonBase-root-MuiToggleButton-root,
 .css-q5cu77 {
-  width: 86px !important;
-  max-width: 86px !important;
-  min-width: 86px !important;
-  margin: 5px !important;
+  width: 120px !important;
+  max-width: 120px !important;
   border: 0.752778px solid #d9d9d9 !important;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     #ffffff !important;
@@ -58,4 +61,10 @@
     #ffffff !important;
   border: 0.752778px solid #3c00bb !important;
   transition: 0.2s;
+}
+
+.css-1gjgmky-MuiToggleButtonGroup-root {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }

@@ -1,17 +1,10 @@
 import React from "react";
-// import useToken from "../Hooks/useToken";
+import Login from "../Components/Login/Login";
 
 function LogIn() {
-    // const [_, setToken] = useToken() 
-
-  // const hendleLogin = (e) => {
-  //   // setToken("jkinjunbhu")
-  // }
   return (
-    <div className="LogIn mx-auto w-11/12">
-      <h2>LogIn</h2>
-
-      {/* <button onClick={hendleLog  in}>Login</button> */}
+    <div className="LogIn mx-auto">
+      <Login/>
     </div>
   );
 }

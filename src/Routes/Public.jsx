@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Outlet } from "react-router-dom"
 function Public() {
   return (
-    <div className="Public mx-auto w-11/12">
-      <h2>Public</h2>
+    <div className="Public">
+      <Outlet />
     </div>
   );
 }
