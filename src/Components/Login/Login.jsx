@@ -1,6 +1,6 @@
 import Button from "@mui/material/Button";
-import React, { useState, useEffect } from "react";
-import { NavLink,Navigate } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import SelectRole from "../SelectRole/selectRole";
 import useToken from "../../Hooks/useToken";
 // import SendMessage from "./sendMessage";
@@ -11,8 +11,9 @@ import useToken from "../../Hooks/useToken";
 // import {useRouter} from 'next/router'
 // import Link from 'react-router-dom'
 const Login = () => {
+  const navigate = useNavigate();
   const [isLogin, setIsLogin] = useState(false);
-  let [_, setToken] = useToken()
+  let [token, setToken] = useToken();
   const [userName, setUserName] = useState({
     value: "",
     status: false,
@@ -27,30 +28,34 @@ const Login = () => {
   });
 
   const Post = (e) => {
-    e.preventDefault()
-    setToken(userName.value)
-    console.log(userName);
-      // axios
-      //   .post("/api/users/login", { username: userName.value, password: password.value })
-      //   .then((res) => {
-         
-      //   setToken(res.data.data.token)
-      //   setIsCountinuingOn(false);
-      //   setIsLogin(false)
-      //   setDanger("good");
-      //   setErrorDetails(res.data.message);
+    e.preventDefault();
+    setToken(userName.value);
+    console.log(userName, token);
+    if (token !== "null" && token) {
+      navigate("/about");
+    }
+    // return <Navigate to="/" />;
+    // axios
+    //   .post("/api/users/login", { username: userName.value, password: password.value })
+    //   .then((res) => {
 
-      //   })
-      //   .catch((err) => {
-      //     let update = {...password}
-      //     setDanger("bad");
-      //     setStart(true);
-      //     setErrorDetails(err.response.data.message);
-      //     update.status = true
-      //     setIsCountinuingOn(false);
-      //     setPassword(update)
-      //     console.log(err);
-      //   });
+    //   setToken(res.data.data.token)
+    //   setIsCountinuingOn(false);
+    //   setIsLogin(false)
+    //   setDanger("good");
+    //   setErrorDetails(res.data.message);
+
+    //   })
+    //   .catch((err) => {
+    //     let update = {...password}
+    //     setDanger("bad");
+    //     setStart(true);
+    //     setErrorDetails(err.response.data.message);
+    //     update.status = true
+    //     setIsCountinuingOn(false);
+    //     setPassword(update)
+    //     console.log(err);
+    //   });
     // }
   };
 
@@ -58,7 +63,7 @@ const Login = () => {
     let update = { ...userRole };
     update.value = e;
     setUserRole(update);
-    setIsLogin(true)
+    setIsLogin(true);
   };
 
   const userNameChangeHandler = (e) => {
@@ -76,9 +81,9 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login__container container">
-        <a className="login__logo">
+        <NavLink to="/" className="login__logo">
           <h1 className="m-0">Inpos</h1>
-        </a>
+        </NavLink>
         {isLogin ? (
           <>
             <form className="login__form">
@@ -86,7 +91,7 @@ const Login = () => {
               <p className="login__form-txt">
                 Akkauntingiz yo'qmi?{" "}
                 <NavLink className="login__form-link" to="/register">
-                 Ro'yxatdan o'tish
+                  Ro'yxatdan o'tish
                 </NavLink>
               </p>
               <label className="login__label">
@@ -133,9 +138,8 @@ const Login = () => {
                 variant="contained"
                 className="btn__txt bg-btnBg w-full px-2"
                 onClick={(e) => {
-                    Post(e)
-                    
-                  }}
+                  Post(e);
+                }}
                 // onClick={(e) => {
                 //   Post(e), setIsCountinuingOn(true);
                 //   setTimeout(() => {
@@ -149,7 +153,9 @@ const Login = () => {
             </form>
           </>
         ) : (
-          <><SelectRole userRoleChangeHandler={userRoleChangeHandler}/></>
+          <>
+            <SelectRole userRoleChangeHandler={userRoleChangeHandler} />
+          </>
         )}
       </div>
     </div>
