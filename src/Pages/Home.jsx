@@ -11,6 +11,12 @@ function Home() {
       <Button variant="outlined" className="p-0">
         <NavLink to="/login" className="p-2">Login</NavLink>
       </Button>
+      <Button variant="outlined" className="p-0">
+        <NavLink to="/login" className="p-2">Login</NavLink>
+      </Button>
+      <Button variant="outlined" className="p-0">
+        <NavLink to="/login" className="p-2">Login</NavLink>
+      </Button>
     </div>
   );
 }
