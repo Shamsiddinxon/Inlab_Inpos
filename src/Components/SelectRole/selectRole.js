@@ -3,8 +3,8 @@ import {  useState } from "react";
 // import router from "next/router";
 const SelectRole = ({userRoleChangeHandler}) => {
   // const [roles, setRoles] = useState([]);
-  const [isPageOpened, setIsPageOpened] = useState(false);
-  setIsPageOpened(false)
+  // const [isPageOpened, setIsPageOpened] = useState(false);
+  // setIsPageOpened(false)
   // setElRole("admin")
   // console.log(elRole);
 
@@ -35,7 +35,7 @@ const SelectRole = ({userRoleChangeHandler}) => {
   // };
   return (
     <>
-      {isPageOpened ? (
+      {0 ? (
         <div className="intro-loader__wrapper">
           <div className="intro-loader">{/* <div className='b'></div> */}</div>
         </div>
