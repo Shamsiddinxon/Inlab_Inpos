@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 // import axios from "../../axios";
 // import router from "next/router";
 const SelectRole = ({userRoleChangeHandler}) => {
   // const [roles, setRoles] = useState([]);
   const [isPageOpened, setIsPageOpened] = useState(false);
+  setIsPageOpened(false)
   // setElRole("admin")
   // console.log(elRole);
 
