@@ -530,6 +530,20 @@ img {
 
 .about__main_ {
   height: 100% !important;
+  width: 100%;
+}
+
+.about__brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .about__main_top {
@@ -539,13 +553,27 @@ img {
 
 .search,
 .brands,
+.brands1,
 .about__brand_bottom {
   border: 1px solid #000000;
 }
 
+.about__brand {
+  height: 79%;
+}
+
+.about__brand1 {
+  height: 100%;
+}
+
 .brands {
-  width: 32%;
-  height: 170px;
+  height: 44.5%;
+  width: 31.5%;
+}
+
+.brands1 {
+  height: 45%;
+  width: 32.5%;
 }
 
 .input:checked + .money-withdraw {
@@ -581,6 +609,12 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+}
+
+@media only screen and (max-width: 1255px) {
+  .brands {
+    width: 31%;
+  }
 }
 
 .header__navlink.active {
