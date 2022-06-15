@@ -137,9 +137,9 @@ function Main() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="my-1" />
             <div className="main__bottom w-full h-3/6 ">
-              <div className="about__brand1 w-full flex flex-wrap justify-between p-3.5 ">
+              <div className="about__brand1 w-full flex flex-wrap justify-between px-3.5 pt-2.5 ">
                 <div className="brands1 rounded-lg m-0.5 mb-2"></div>
                 <div className="brands1 rounded-lg m-0.5 mb-2"></div>
                 <div className="brands1 rounded-lg m-0.5 mb-2"></div>
@@ -156,6 +156,7 @@ function Main() {
                 <div className="brands1 rounded-lg m-0.5 mb-2"></div>
               </div>
             </div>
+            <hr />
           </div>
           <div className="w-3/12 py-4 pr-4">
             <div className="about__bils w-full bg-totalBg h-full relative pt-7 pb-230px px-3.5  rounded-lg">
@@ -269,7 +270,7 @@ function Main() {
 
                     <div className="blis_buttons flex flex-col justify-center mb-4">
                       <ToggleButtonGroup
-                      className="flex justify-between"
+                        className="flex justify-between"
                         value={alignment}
                         exclusive
                         onChange={handleAlignment}

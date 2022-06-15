@@ -33,11 +33,13 @@
   height: 10%;
 }
 
-// .search {
-//   height: 21%;
-// }
+.search {
+  padding: 4px;
+  background: rgba(60, 0, 187, 0.1);
+  border-radius: 10px;
+}
 
-.search,
+// .search,
 // .brands,
 .brands1,
 .about__brand_bottom {
@@ -49,15 +51,15 @@
   overflow: auto;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap !important
+  flex-wrap: wrap !important;
 }
 
 .about__brand1 {
   height: 100%;
   overflow: auto;
-    display: flex;
+  display: flex;
   justify-content: space-around;
-  flex-wrap: wrap !important
+  flex-wrap: wrap !important;
 }
 
 .brands {
@@ -80,7 +82,6 @@
   height: 100%;
   object-fit: cover;
 }
-
 
 @media only screen and (max-width: 1255px) {
   .brands {

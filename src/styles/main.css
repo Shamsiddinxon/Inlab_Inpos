@@ -605,7 +605,12 @@ img {
   height: 10%;
 }
 
-.search,
+.search {
+  padding: 4px;
+  background: rgba(60, 0, 187, 0.1);
+  border-radius: 10px;
+}
+
 .brands1,
 .about__brand_bottom {
   border: 1px solid #000000;
