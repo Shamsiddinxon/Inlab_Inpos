@@ -94,14 +94,17 @@ function Main() {
 
       <div className="about__main h-full">
         <div className="about__main_  flex ">
-          <div className="main__top w-9/12 flex flex-col ">
+          <div className="main__top bg-white mb-4 w-9/12 flex flex-col ">
             <div className="about__brands h-3/6 pt-4">
-              <div className=" h-14 w-full rounded-lg px-4">
+              <div className=" h-15 w-full rounded-lg px-4">
                 <div className="search mb-2">ytftyu</div>
                 <div className="search ">ytftyu</div>
               </div>
-              <div className="about__brand w-full flex flex-wrap justify-between p-2 ">
-                <div className="brands p-0 rounded-lg m-2">
+              <div className="about__brand    p-2 ">
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
                   <Skeleton className=" skeleton " />
                 </div>
                 <div className="brands rounded-lg m-2">
@@ -110,6 +113,19 @@ function Main() {
                 <div className="brands rounded-lg m-2">
                   <Skeleton className=" skeleton " />
                 </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+
                 <div className="brands rounded-lg m-2">
                   <Skeleton className=" skeleton " />
                 </div>
@@ -124,16 +140,20 @@ function Main() {
             <hr />
             <div className="main__bottom w-full h-3/6 ">
               <div className="about__brand1 w-full flex flex-wrap justify-between p-3.5 ">
-                <div className="brands1 rounded-lg m-0.5">
-                </div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
-                <div className="brands1 rounded-lg m-0.5"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
+                <div className="brands1 rounded-lg m-0.5 mb-2"></div>
               </div>
             </div>
           </div>
@@ -249,6 +269,7 @@ function Main() {
 
                     <div className="blis_buttons flex flex-col justify-center mb-4">
                       <ToggleButtonGroup
+                      className="flex justify-between"
                         value={alignment}
                         exclusive
                         onChange={handleAlignment}
