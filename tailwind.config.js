@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       colors: {
         brandGreen: "#070C18",
-        totalBg: "#D9D9D9",
+        totalBg: "#ebebeb",
         greenBtn: "#3C00BB",
         btnBg: "#197db5",
       },

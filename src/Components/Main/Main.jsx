@@ -1,9 +1,9 @@
 import React from "react";
 import Button from "@mui/material/Button";
-
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 function Main() {
   const [alignment, setAlignment] = React.useState(null);
 
@@ -95,26 +95,42 @@ function Main() {
       <div className="about__main h-full">
         <div className="about__main_  flex ">
           <div className="main__top w-9/12 flex flex-col ">
-            <div className="about__brands h-3/6">
+            <div className="about__brands h-3/6 pt-4">
               <div className=" h-14 w-full rounded-lg px-4">
+                <div className="search mb-2">ytftyu</div>
                 <div className="search ">ytftyu</div>
               </div>
               <div className="about__brand w-full flex flex-wrap justify-between p-2 ">
-                <div className="brands rounded-lg m-2"></div>
-                <div className="brands rounded-lg m-2"></div>
-                <div className="brands rounded-lg m-2"></div>
-                <div className="brands rounded-lg m-2"></div>
-                <div className="brands rounded-lg m-2"></div>
-                <div className="brands rounded-lg m-2"></div>
+                <div className="brands p-0 rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
+                <div className="brands rounded-lg m-2">
+                  <Skeleton className=" skeleton " />
+                </div>
               </div>
             </div>
-
+            <hr />
             <div className="main__bottom w-full h-3/6 ">
-            <div className="about__brand1 w-full flex flex-wrap justify-between p-3.5 ">
+              <div className="about__brand1 w-full flex flex-wrap justify-between p-3.5 ">
+                <div className="brands1 rounded-lg m-0.5">
+                </div>
                 <div className="brands1 rounded-lg m-0.5"></div>
                 <div className="brands1 rounded-lg m-0.5"></div>
                 <div className="brands1 rounded-lg m-0.5"></div>
-
+                <div className="brands1 rounded-lg m-0.5"></div>
+                <div className="brands1 rounded-lg m-0.5"></div>
                 <div className="brands1 rounded-lg m-0.5"></div>
                 <div className="brands1 rounded-lg m-0.5"></div>
                 <div className="brands1 rounded-lg m-0.5"></div>
@@ -139,52 +155,52 @@ function Main() {
                   </div>
 
                   <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
-                  </div>
-                </div>
 
                   <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
                   </div>
-                </div>
-
-                <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
-                  </div>
-                </div>
 
                   <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
                   </div>
-                </div>
 
-                <div className="bils__item mb-5">
-                  <h3 className="bils__item_title ">Qovun</h3>
-                  <div className="flex justify-between ">
-                    <p className="bils__item_desc">x100</p>
-                    <p className="bils__item_desc">1 200 000 so’m</p>
+                  <div className="bils__item mb-5">
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
                   </div>
-                </div>
+
+                  <div className="bils__item mb-5">
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
+                  </div>
+
+                  <div className="bils__item mb-5">
+                    <h3 className="bils__item_title ">Qovun</h3>
+                    <div className="flex justify-between ">
+                      <p className="bils__item_desc">x100</p>
+                      <p className="bils__item_desc">1 200 000 so’m</p>
+                    </div>
+                  </div>
 
                   <div className="bils__item mb-5">
                     <h3 className="bils__item_title ">Qovun</h3>
