@@ -4,9 +4,7 @@ module.exports = {
     extend: {
       colors: {
         brandGreen: "#070C18",
-        totalBg: "#ebebeb",
-        greenBtn: "#3C00BB",
-        btnBg: "#197db5",
+        btnBg: "#F5F5F2",
       },
       spacing: {
         "230px": "230px",
