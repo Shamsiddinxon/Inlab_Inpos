@@ -114,3 +114,8 @@
   text-align: center;
   transition: .1s;
 }
+
+Button:hover {
+  opacity: 0.8 !important;
+  transition: 0.3s ;
+}

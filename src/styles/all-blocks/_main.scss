@@ -34,9 +34,12 @@
 }
 
 .search {
-  padding: 4px;
-  background: rgba(60, 0, 187, 0.1);
+  padding: 0px;
   border-radius: 10px;
+}
+
+svg {
+  height: 16px !important;
 }
 
 // .search,

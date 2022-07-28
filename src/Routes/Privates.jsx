@@ -5,7 +5,7 @@ import useToken from "../Hooks/useToken"
 function Private() {
 const [token] = useToken()
 
-if (token !== "null" && token ) {
+if (token !== "null" && token) {
   console.log(typeof token);
   return <Outlet/>
 }

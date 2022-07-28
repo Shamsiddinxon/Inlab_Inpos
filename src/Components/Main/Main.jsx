@@ -97,10 +97,47 @@ function Main() {
           <div className="main__top bg-white mb-4 w-9/12 flex flex-col ">
             <div className="about__brands h-3/6 pt-4">
               <div className=" h-15 w-full rounded-lg px-4">
-                <div className="search mb-2">ytftyu</div>
+                <div className="search flex mb-2 w-full">
+                  <div className="flex w-7/12">
+                    <div className="bg-bgSearchLite flex text-center justify-center p-1 pl-3 rounded-l-lg">
+                      <span className="h-6 mt-0.5">
+                        <box-icon
+                          name="search"
+                          className="flex text-center h-4 mt-2"
+                        ></box-icon>
+                      </span>
+                    </div>
+                    <input
+                      type="text"
+                      className="outline-none bg-bgSearchLite p-1 rounded-r-lg text-lg w-full"
+                    />
+                  </div>
+
+                  <Button
+                    variant="contained"
+                    style={{
+                      
+                      backgroundColor: "#3C00BB",
+                      color: "#fff",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    Costum
+                  </Button>
+                  <Button
+                    variant="contained"
+                    style={{
+                      backgroundColor: "#3C00BB",
+                      color: "#fff",
+                      borderRadius: "10px",
+                    }}
+                  >
+                    Contained
+                  </Button>
+                </div>
                 <div className="search ">ytftyu</div>
               </div>
-              <div className="about__brand    p-2 ">
+              <div className="about__brand p-2 ">
                 <div className="brands rounded-lg m-2">
                   <Skeleton className=" skeleton " />
                 </div>

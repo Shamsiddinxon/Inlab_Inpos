@@ -606,9 +606,12 @@ img {
 }
 
 .search {
-  padding: 4px;
-  background: rgba(60, 0, 187, 0.1);
+  padding: 0px;
   border-radius: 10px;
+}
+
+svg {
+  height: 16px !important;
 }
 
 .brands1,
@@ -974,5 +977,11 @@ input:invalid:not(:focus):not(:placeholder-shown) ~ .login__input-name {
   text-align: center;
   -webkit-transition: .1s;
   transition: .1s;
+}
+
+Button:hover {
+  opacity: 0.8 !important;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

@@ -105,6 +105,7 @@ const Login = () => {
                   type="text"
                   name="login-username"
                   id="login-username"
+                  autoComplete="off"
                   placeholder="Username kiriting"
                   minLength={3}
                 />
@@ -129,6 +130,7 @@ const Login = () => {
                   name="login-password"
                   id="login-password"
                   placeholder="Parol kiriting"
+                  autoComplete="new-password"
                   minLength={password.status ? 50 : 3}
                 />
                 <span className="login__input-name">Parol</span>
