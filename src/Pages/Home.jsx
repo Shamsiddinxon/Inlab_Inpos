@@ -1,14 +1,22 @@
+
+import Button from "@mui/material/Button";
+
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Button from "@mui/material/Button";
-import Main from "../Components/Main/Main";
-import axios from "axios";
-// import img from "";
 
 function Home() {
   return (
-    <div className="home">
-      <Main />
+    <div className="Home mx-auto w-11/12">
+      <h2>home</h2>
+      <Button variant="outlined" className="p-0">
+        <NavLink to="/login" className="p-2">Login</NavLink>
+      </Button>
+      <Button variant="outlined" className="p-0">
+        <NavLink to="/login" className="p-2">Login</NavLink>
+      </Button>
+      <Button variant="outlined" className="p-0">
+        <NavLink to="/login" className="p-2">Login</NavLink>
+      </Button>
     </div>
   );
 }
