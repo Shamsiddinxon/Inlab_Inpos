@@ -25,7 +25,6 @@ function App() {
 
           <Route path="/" element={<Private />}>
             <Route path="/about" element={<About />} />
-            <Route path="/cashier" element={<Cashier />} />
           </Route>
         </Routes>
       </StyledEngineProvider>
