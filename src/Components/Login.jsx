@@ -12,7 +12,7 @@ import useToken from "../Hooks/useToken";
 // import Link from 'react-router-dom'
 const Login = () => {
   const navigate = useNavigate();
-  const [isLogin, setIsLogin] = useState(false);
+  // const [isLogin, setIsLogin] = useState(false);
   let [token, setToken] = useToken();
   const [userName, setUserName] = useState({
     value: "",
@@ -22,10 +22,10 @@ const Login = () => {
     value: "",
     status: false,
   });
-  const [userRole, setUserRole] = useState({
-    value: "",
-    status: false,
-  });
+  // const [userRole, setUserRole] = useState({
+  //   value: "",
+  //   status: false,
+  // });
 
   const Post = (e) => {
     e.preventDefault();
