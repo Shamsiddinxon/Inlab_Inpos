@@ -859,6 +859,7 @@ input:invalid:not(:focus):not(:placeholder-shown) ~ .login__input-name {
 }
 
 .cashier {
+  position: relative;
   display: flex;
   background: #000;
   width: 100%;
@@ -1063,4 +1064,41 @@ input:invalid:not(:focus):not(:placeholder-shown) ~ .login__input-name {
   line-height: 24px;
   color: #ffffff;
   border-radius: 8px;
+}
+
+.cashier__buymodal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cashier__buymodal-main {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 565px;
+  background-color: #2d2d2d;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.cashier__buymodal div.overflow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  background: rgba(4, 4, 4, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 5;
+  transition: 0.3s;
+}
+
+.cashier__buymodal ::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

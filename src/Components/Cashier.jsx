@@ -1,9 +1,11 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { useState } from "react";
 import accImg from "../Assests/img/acc.png";
 // import { Button } from "@mui/material";
 
 function Cashiers() {
+  let [buyModal, setBuyModal] = useState(false);
   return (
     <div className="cashier">
       <div className="cashier__main">
@@ -121,7 +123,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -129,7 +131,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -137,7 +139,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -145,7 +147,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -153,7 +155,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -161,7 +163,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -169,7 +171,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -177,7 +179,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -185,7 +187,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -193,7 +195,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -201,7 +203,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -209,7 +211,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -217,7 +219,7 @@ function Cashiers() {
             <div className="cashier__main-list-item">
               <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
               <div>
-                <i class="bx bxs-barcode"></i>
+                <i className="bx bxs-barcode"></i>
                 <p> 2129817321932389012</p>
               </div>
             </div>
@@ -231,16 +233,16 @@ function Cashiers() {
             <div>
               <div className="cashier__buylist-item-counter">
                 <button>
-                  <i class="bx bx-minus"></i>
+                  <i className="bx bx-minus"></i>
                 </button>
                 <span>100</span>
                 <button>
-                  <i class="bx bx-plus"></i>
+                  <i className="bx bx-plus"></i>
                 </button>
               </div>
 
               <button>
-                <i class="bx bx-trash"></i>
+                <i className="bx bx-trash"></i>
               </button>
             </div>
           </div>
@@ -250,16 +252,16 @@ function Cashiers() {
             <div>
               <div className="cashier__buylist-item-counter">
                 <button>
-                  <i class="bx bx-minus"></i>
+                  <i className="bx bx-minus"></i>
                 </button>
                 <span>100</span>
                 <button>
-                  <i class="bx bx-plus"></i>
+                  <i className="bx bx-plus"></i>
                 </button>
               </div>
 
               <button>
-                <i class="bx bx-trash"></i>
+                <i className="bx bx-trash"></i>
               </button>
             </div>
           </div>
@@ -269,16 +271,16 @@ function Cashiers() {
             <div>
               <div className="cashier__buylist-item-counter">
                 <button>
-                  <i class="bx bx-minus"></i>
+                  <i className="bx bx-minus"></i>
                 </button>
                 <span>100</span>
                 <button>
-                  <i class="bx bx-plus"></i>
+                  <i className="bx bx-plus"></i>
                 </button>
               </div>
 
               <button>
-                <i class="bx bx-trash"></i>
+                <i className="bx bx-trash"></i>
               </button>
             </div>
           </div>
@@ -288,16 +290,16 @@ function Cashiers() {
             <div>
               <div className="cashier__buylist-item-counter">
                 <button>
-                  <i class="bx bx-minus"></i>
+                  <i className="bx bx-minus"></i>
                 </button>
                 <span>100</span>
                 <button>
-                  <i class="bx bx-plus"></i>
+                  <i className="bx bx-plus"></i>
                 </button>
               </div>
 
               <button>
-                <i class="bx bx-trash"></i>
+                <i className="bx bx-trash"></i>
               </button>
             </div>
           </div>
@@ -321,11 +323,59 @@ function Cashiers() {
               backgroundColor: "#8bc34a",
               padding: "15px",
             }}
+            onClick={() => {
+              setBuyModal(true);
+            }}
           >
             Pay
           </Button>
         </div>
       </div>
+      {buyModal ? (
+        <div className="cashier__buymodal">
+          <div className="cashier__buymodal-main">
+            <Button
+              style={{
+                backgroundColor: "#FF4806",
+                color: "#fff",
+                padding: "15px 50px",
+                fontWeight: "600",
+                fontSize: "20px",
+                lineHeight: "24px",
+              }}
+              onClick={(evt) => {
+                setBuyModal(false);
+              }}
+            >
+              Cancel
+            </Button>
+            <Button
+              style={{
+                padding: "15px 50px",
+                backgroundColor: "#CCCCCC",
+                color: "#fff",
+                padding: "15px 50px",
+                fontWeight: "600",
+                fontSize: "20px",
+                lineHeight: "24px",
+              }}
+              onClick={(evt) => {
+                setBuyModal(false);
+              }}
+            >
+              Print order
+            </Button>
+          </div>
+          <div
+            className="overflow"
+            onClick={(evt) => {
+              setBuyModal(false);
+            }}
+          ></div>
+        </div>
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 }
