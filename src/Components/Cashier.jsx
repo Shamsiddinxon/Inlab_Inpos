@@ -215,14 +215,6 @@ function Cashiers() {
                 <p> 2129817321932389012</p>
               </div>
             </div>
-
-            <div className="cashier__main-list-item">
-              <p>Uchimsya schitat i pishem sifri - D. Karabayeva</p>
-              <div>
-                <i className="bx bxs-barcode"></i>
-                <p> 2129817321932389012</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
