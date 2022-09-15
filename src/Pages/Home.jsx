@@ -1,4 +1,3 @@
-
 import Button from "@mui/material/Button";
 
 import React from "react";
@@ -9,13 +8,19 @@ function Home() {
     <div className="Home mx-auto w-11/12">
       <h2>home</h2>
       <Button variant="outlined" className="p-0">
-        <NavLink to="/login" className="p-2">Login</NavLink>
+        <NavLink to="/login" className="p-2">
+          Login
+        </NavLink>
       </Button>
       <Button variant="outlined" className="p-0">
-        <NavLink to="/login" className="p-2">Login</NavLink>
+        <NavLink to="/cashier" className="p-2">
+          Cashier
+        </NavLink>
       </Button>
       <Button variant="outlined" className="p-0">
-        <NavLink to="/login" className="p-2">Login</NavLink>
+        <NavLink to="/login" className="p-2">
+          Login
+        </NavLink>
       </Button>
     </div>
   );

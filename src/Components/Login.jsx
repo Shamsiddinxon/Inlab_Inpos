@@ -1,8 +1,8 @@
 import Button from "@mui/material/Button";
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import SelectRole from "../SelectRole/selectRole";
-import useToken from "../../Hooks/useToken";
+import SelectRole from "./selectRole";
+import useToken from "../Hooks/useToken";
 // import SendMessage from "./sendMessage";
 // import SendPhone from "./sendPhone";
 // import { AlertWarning } from "../Alert";
@@ -32,7 +32,7 @@ const Login = () => {
     setToken(userName.value);
     console.log(userName, token);
     if (token !== "null" && token) {
-      navigate("/about");
+      navigate("/cashier");
     }
     // return <Navigate to="/" />;
     // axios

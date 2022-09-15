@@ -1,0 +1,244 @@
+.cashier {
+  display: flex;
+
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+
+  &__container {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__main {
+    flex-grow: 1;
+    width: 74%;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    width: 26%;
+    background-color: #2d2d2d;
+  }
+
+  // *** Cashier Main Top ****
+  &__main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 20px;
+
+    &-hamburger {
+      margin-right: 25px;
+    }
+
+    & div {
+      display: flex;
+      align-items: center;
+
+      & input {
+        width: 400px;
+        height: 52px;
+        padding: 0 30px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        border-radius: 50px;
+        background: #404040;
+        color: #fff;
+      }
+
+      & input:focus {
+        outline: none;
+      }
+    }
+    &-search {
+      position: absolute;
+      padding: auto;
+      height: 50px;
+      width: 51px;
+      right: 1px;
+      top: 1px;
+      background: #d9d9d9;
+      border-radius: 50px;
+    }
+
+    &-search i {
+      font-size: 24px;
+      color: #000;
+    }
+
+    &-acc {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      background: #404040;
+      border-radius: 50px;
+      height: 52px;
+      padding-left: 20px;
+
+      & img {
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        margin-left: 17px;
+      }
+    }
+  }
+
+  & button i.bx-menu {
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    color: #fff;
+  }
+
+  // *** Cashier Main hero ***
+  &__main-hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: auto;
+    gap: 15px;
+    padding: 18px 0;
+  }
+
+  &__main-hero::-webkit-scrollbar {
+    // width: 1px;
+    height: 4px;
+  }
+  &__main-hero Button {
+    flex-shrink: 0;
+  }
+
+  // *** Cashier Main List  ***
+
+  &__main-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 18px;
+    &-item {
+      // max-width: 25%;
+      padding: 15px;
+      background: #2d2d2d;
+      border-radius: 8px;
+
+      & p {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+      }
+
+      & div {
+        display: flex;
+        gap: 14px;
+
+        & p {
+          margin: 0;
+          font-size: 14px;
+        }
+        & i {
+          font-size: 24px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  // *** Cashier Right ***
+
+  &__buylist-item {
+    padding: 22px 17px;
+    background: #121212;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    & p {
+      margin-bottom: 20px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 25px;
+      color: #ffffff;
+    }
+    & div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-counter {
+      gap: 25px;
+    }
+
+    & button {
+      width: 34px;
+      height: 34px;
+      padding: 5px;
+      background: #404040;
+      border-radius: 10px;
+    }
+
+    & span {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #ffffff;
+    }
+
+    & button i {
+      font-size: 22px;
+      color: white;
+    }
+
+    & button i.bx-trash {
+      color: #ff4806;
+    }
+  }
+
+  &__buy {
+    padding: 17px;
+    background: #121212;
+    border-radius: 8px;
+
+    & p {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 11px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      color: #d9d9d9;
+    }
+
+    & h4 {
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 30px;
+      color: #d9d9d9;
+    }
+
+    &-subtotal {
+      padding-bottom: 15px;
+      border-bottom: 1px dashed #d9d9d9;
+    }
+
+    &-btn {
+      width: 100%;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+      border-radius: 8px;
+    }
+  }
+}

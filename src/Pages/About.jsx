@@ -1,10 +1,8 @@
 import React from "react";
-import Main from "../Components/Main/Main";
+import Main from "../Components/Main";
 
 function About() {
-  return (
-    <Main/>
-  )
+  return <Main />;
 }
 
 export default About;

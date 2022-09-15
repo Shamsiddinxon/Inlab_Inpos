@@ -3,6 +3,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import LogIn from "./Pages/LogIn";
 import LogOut from "./Pages/LogOut";
+import Cashier from "./Pages/Cashier";
 import NotFound from "./Pages/NotFound";
 import { StyledEngineProvider } from "@mui/material";
 import Public from "./Routes/Public";
@@ -19,10 +20,12 @@ function App() {
             <Route path="/logout" element={<LogOut />} />
             <Route path="/*" element={<NotFound />} />
             <Route path="/" element={<Home />} />
+            <Route path="/cashier" element={<Cashier />} />
           </Route>
 
           <Route path="/" element={<Private />}>
             <Route path="/about" element={<About />} />
+            <Route path="/cashier" element={<Cashier />} />
           </Route>
         </Routes>
       </StyledEngineProvider>

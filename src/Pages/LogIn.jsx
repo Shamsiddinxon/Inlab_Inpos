@@ -1,10 +1,10 @@
 import React from "react";
-import Login from "../Components/Login/Login";
+import Login from "../Components/Login";
 
 function LogIn() {
   return (
     <div className="LogIn mx-auto">
-      <Login/>
+      <Login />
     </div>
   );
 }
