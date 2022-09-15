@@ -32,7 +32,7 @@ const Login = () => {
     setToken(userName.value);
     console.log(userName, token);
     if (token !== "null" && token) {
-      navigate("/cashier");
+      navigate("/about");
     }
     // return <Navigate to="/" />;
     // axios
