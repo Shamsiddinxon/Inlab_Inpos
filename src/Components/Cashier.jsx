@@ -346,7 +346,6 @@ function Cashiers() {
                 padding: "15px 50px",
                 backgroundColor: "#CCCCCC",
                 color: "#fff",
-                padding: "15px 50px",
                 fontWeight: "600",
                 fontSize: "20px",
                 lineHeight: "24px",
