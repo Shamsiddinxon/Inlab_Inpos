@@ -224,18 +224,45 @@ function Cashiers() {
             <p>Quarter Pounder With Cheese</p>
             <div>
               <div className="cashier__buylist-item-counter">
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-minus"></i>
-                </button>
+                </Button>
                 <span>100</span>
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-plus"></i>
-                </button>
+                </Button>
               </div>
 
-              <button>
+              <Button
+                style={{
+                  backgroundColor: "#404040",
+                  color: "#fff",
+                  borderRadius: "10px",
+                  padding: "5px",
+                  maxWidth: "34px",
+                  minWidth: "34px",
+                }}
+              >
                 <i className="bx bx-trash"></i>
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -243,18 +270,45 @@ function Cashiers() {
             <p>Quarter Pounder With Cheese</p>
             <div>
               <div className="cashier__buylist-item-counter">
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-minus"></i>
-                </button>
+                </Button>
                 <span>100</span>
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-plus"></i>
-                </button>
+                </Button>
               </div>
 
-              <button>
+              <Button
+                style={{
+                  backgroundColor: "#404040",
+                  color: "#fff",
+                  borderRadius: "10px",
+                  padding: "5px",
+                  maxWidth: "34px",
+                  minWidth: "34px",
+                }}
+              >
                 <i className="bx bx-trash"></i>
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -262,18 +316,45 @@ function Cashiers() {
             <p>Quarter Pounder With Cheese</p>
             <div>
               <div className="cashier__buylist-item-counter">
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-minus"></i>
-                </button>
+                </Button>
                 <span>100</span>
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-plus"></i>
-                </button>
+                </Button>
               </div>
 
-              <button>
+              <Button
+                style={{
+                  backgroundColor: "#404040",
+                  color: "#fff",
+                  borderRadius: "10px",
+                  padding: "5px",
+                  maxWidth: "34px",
+                  minWidth: "34px",
+                }}
+              >
                 <i className="bx bx-trash"></i>
-              </button>
+              </Button>
             </div>
           </div>
 
@@ -281,18 +362,45 @@ function Cashiers() {
             <p>Quarter Pounder With Cheese</p>
             <div>
               <div className="cashier__buylist-item-counter">
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-minus"></i>
-                </button>
+                </Button>
                 <span>100</span>
-                <button>
+                <Button
+                  style={{
+                    backgroundColor: "#404040",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    padding: "5px",
+                    maxWidth: "34px",
+                    minWidth: "34px",
+                  }}
+                >
                   <i className="bx bx-plus"></i>
-                </button>
+                </Button>
               </div>
 
-              <button>
+              <Button
+                style={{
+                  backgroundColor: "#404040",
+                  color: "#fff",
+                  borderRadius: "10px",
+                  padding: "5px",
+                  maxWidth: "34px",
+                  minWidth: "34px",
+                }}
+              >
                 <i className="bx bx-trash"></i>
-              </button>
+              </Button>
             </div>
           </div>
         </div>

@@ -180,14 +180,14 @@
     }
 
     & button {
-      width: 34px;
+      // width: 34px !important;
       height: 34px;
       padding: 5px;
       background: #404040;
       border-radius: 10px;
     }
 
-    & span {
+    & button + span {
       font-weight: 500;
       font-size: 24px;
       line-height: 29px;
