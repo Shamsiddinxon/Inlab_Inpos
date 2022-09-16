@@ -663,7 +663,7 @@ img {
   line-height: 19px;
   color: #979797;
 }
-.login__left form a {
+.login__left form .link {
   display: inline-block;
   font-weight: 500;
   font-size: 16px;

@@ -71,7 +71,9 @@ const Login = () => {
             />
           </div>
 
-          <div className="forgot">{/* <a href="#">Forgot password</a> */}</div>
+          <div className="forgot">
+            <p className="link">Forgot password</p>
+          </div>
           <Button
             style={{
               backgroundColor: "#8BC34A",
@@ -87,7 +89,7 @@ const Login = () => {
             Sign in
           </Button>
           <p className="account">
-            {/* Don’t have an account? <a href="#"> Sign up</a> */}
+            Don’t have an account? <p className="link"> Sign up</p>
           </p>
         </form>
       </div>
