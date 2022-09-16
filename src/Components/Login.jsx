@@ -1,20 +1,11 @@
 import Button from "@mui/material/Button";
 import React, { useState } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useToken from "../Hooks/useToken";
-// import SelectRole from "./selectRole";
-// import SendMessage from "./sendMessage";
-// import SendPhone from "./sendPhone";
-// import { AlertWarning } from "../Alert";
-// import axios from "../../axios";
-// import SelectRole from './selectRole'
-// import {useRouter} from 'next/router'
-// import Link from 'react-router-dom'
 const Login = () => {
   const navigate = useNavigate();
-  // const [isLogin, setIsLogin] = useState(false);
   let [token, setToken] = useToken();
-  const [userName, setUserName] = useState({
+  const [userEmail, setUserEmail] = useState({
     value: "",
     status: false,
   });
@@ -22,48 +13,20 @@ const Login = () => {
     value: "",
     status: false,
   });
-  // const [userRole, setUserRole] = useState({
-  //   value: "",
-  //   status: false,
-  // });
 
   const Post = (e) => {
     e.preventDefault();
-    setToken(userName.value);
-    console.log(userName, token);
+    setToken(userEmail.value);
     if (token !== "null" && token) {
-      navigate("/about");
+      navigate("/cashier");
     }
-    // return <Navigate to="/" />;
-    // axios
-    //   .post("/api/users/login", { username: userName.value, password: password.value })
-    //   .then((res) => {
-
-    //   setToken(res.data.data.token)
-    //   setIsCountinuingOn(false);
-    //   setIsLogin(false)
-    //   setDanger("good");
-    //   setErrorDetails(res.data.message);
-
-    //   })
-    //   .catch((err) => {
-    //     let update = {...password}
-    //     setDanger("bad");
-    //     setStart(true);
-    //     setErrorDetails(err.response.data.message);
-    //     update.status = true
-    //     setIsCountinuingOn(false);
-    //     setPassword(update)
-    //     console.log(err);
-    //   });
-    // }
   };
 
-  const userNameChangeHandler = (e) => {
-    let update = { ...userName };
+  const userEmailChangeHandler = (e) => {
+    let update = { ...userEmail };
     update.value = e.target.value;
     update.status = false;
-    setUserName(update);
+    setUserEmail(update);
   };
   const PasswordChangeHandler = (e) => {
     let update = { ...password };
@@ -73,11 +36,68 @@ const Login = () => {
   };
   return (
     <div className="login">
-      <div className="login__container container">
+      <div className="login__left">
+        <form action="">
+          <h2 className="login__title">Welcome Back</h2>
+          <div>
+            <label htmlFor="login-email">Email</label>
+            <input
+              id="login-email"
+              type="email"
+              placeholder="Enter your email"
+              onChange={(e) => {
+                userEmailChangeHandler(e);
+              }}
+            />
+          </div>
+          <div></div>
+          <div>
+            <label htmlFor="login-password">Password</label>
+            <input
+              id="login-password"
+              type="password"
+              placeholder="Enter your password"
+              value={password.value}
+              onChange={(e) => {
+                PasswordChangeHandler(e);
+              }}
+            />
+          </div>
+
+          <div className="forgot">{/* <a href="#">Forgot password</a> */}</div>
+          <Button
+            style={{
+              backgroundColor: "#8BC34A",
+              color: "#fff",
+              borderRadius: "8px",
+              width: "100%",
+              height: "43px",
+              fontSize: "16px",
+              textTransform: "unset",
+            }}
+            onClick={(e) => {
+              Post(e);
+            }}
+          >
+            Sign in
+          </Button>
+          <p className="account">
+            {/* Don’t have an account? <a href="#"> Sign up</a> */}
+          </p>
+        </form>
+      </div>
+
+      <div className="login__right">
+        <div className="login__right-box">
+          <span className="doira"></span>
+          <span className="hira"></span>
+        </div>
+      </div>
+
+      {/* <div className="login__container container">
         <NavLink to="/" className="login__logo">
           <h1 className="m-0">Inpos</h1>
         </NavLink>
-        {/* {isLogin ? ( */}
 
         <form className="login__form">
           <h1 className="login__form-title">Kirish</h1>
@@ -88,16 +108,15 @@ const Login = () => {
             </NavLink>
           </p>
           <label className="login__label">
-            {/* <span className="login__message">Bunday username olingan</span> */}
             <input
               className="login__input"
               value={userName.value}
+              id="login-username"
               onChange={(e) => {
                 userNameChangeHandler(e);
               }}
               type="text"
               name="login-username"
-              id="login-username"
               placeholder="Username kiriting"
               minLength={3}
             />
@@ -105,13 +124,7 @@ const Login = () => {
           </label>
 
           <label className="login__label">
-            {password.status ? (
-              <>
-                {/* <span className="login__message">Username yoki parol xato terildi</span> */}
-              </>
-            ) : (
-              <></>
-            )}
+            {password.status ? <></> : <></>}
             <input
               className="login__input"
               type="password"
@@ -133,18 +146,11 @@ const Login = () => {
             onClick={(e) => {
               Post(e);
             }}
-            // onClick={(e) => {
-            //   Post(e), setIsCountinuingOn(true);
-            //   setTimeout(() => {
-            //     setStart(false);
-            //   }, 5500);
-            // }}
-            // disabled={button}
           >
             Davom etish
           </Button>
         </form>
-      </div>
+      </div> */}
     </div>
   );
 };

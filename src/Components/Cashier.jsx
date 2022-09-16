@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, ToggleButton, ToggleButtonGroup } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import accImg from "../Assests/img/acc.png";
@@ -6,6 +6,15 @@ import accImg from "../Assests/img/acc.png";
 
 function Cashiers() {
   let [buyModal, setBuyModal] = useState(false);
+
+  const [alignment, setAlignment] = React.useState(null);
+  // console.log(alignment);
+
+  const handleAlignment = (event, newAlignment) => {
+    setAlignment(newAlignment);
+    console.log(alignment);
+  };
+
   return (
     <div className="cashier">
       <div className="cashier__main">
@@ -434,36 +443,85 @@ function Cashiers() {
       {buyModal ? (
         <div className="cashier__buymodal">
           <div className="cashier__buymodal-main">
-            <Button
-              style={{
-                backgroundColor: "#FF4806",
-                color: "#fff",
-                padding: "15px 50px",
-                fontWeight: "600",
-                fontSize: "20px",
-                lineHeight: "24px",
-              }}
-              onClick={(evt) => {
-                setBuyModal(false);
-              }}
+            <ToggleButtonGroup
+              className="flex justify-between"
+              value={alignment}
+              exclusive
+              onChange={handleAlignment}
+              aria-label="text alignment"
             >
-              Cancel
-            </Button>
-            <Button
-              style={{
-                padding: "15px 50px",
-                backgroundColor: "#CCCCCC",
-                color: "#fff",
-                fontWeight: "600",
-                fontSize: "20px",
-                lineHeight: "24px",
-              }}
-              onClick={(evt) => {
-                setBuyModal(false);
-              }}
-            >
-              Print order
-            </Button>
+              <ToggleButton className="mr-2" value="card" aria-label="card">
+                <div className="flex flex-col items-center ">
+                  {/* <box-icon name="credit-card"></box-icon> */}
+                  <i className="bx bxs-credit-card"></i>
+                  <p>Cash</p>
+                </div>
+              </ToggleButton>
+              <ToggleButton className="mr-2" value="Cash" aria-label="centered">
+                <div className="flex flex-col items-center ">
+                  {/* <box-icon name="money-withdraw"></box-icon> */}
+                  <i className="bx bx-money-withdraw"></i>
+                  <p>Cash</p>
+                </div>
+              </ToggleButton>
+              <ToggleButton value="qr" aria-label="right aligned">
+                <div className="flex flex-col items-center">
+                  {/* <box-icon name="qr-scan"></box-icon> */}
+                  <i className="bx bx-qr-scan"></i>
+                  <p>Qr code</p>
+                </div>
+              </ToggleButton>
+            </ToggleButtonGroup>
+            <div className="buy-btns">
+              <Button
+                style={{
+                  textTransform: "capitalize",
+                  backgroundColor: "#FF4806",
+                  color: "#fff",
+                  padding: "15px 50px",
+                  fontWeight: "500",
+                  fontSize: "20px",
+                  lineHeight: "24px",
+                }}
+                onClick={(evt) => {
+                  setBuyModal(false);
+                }}
+              >
+                Cancel
+              </Button>
+              {alignment ? (
+                <Button
+                  style={{
+                    textTransform: "capitalize",
+                    padding: "15px 50px",
+                    backgroundColor: "#8BC34A",
+                    color: "#fff",
+                    fontWeight: "500",
+                    fontSize: "20px",
+                    lineHeight: "24px",
+                  }}
+                  onClick={(evt) => {
+                    setBuyModal(false);
+                  }}
+                >
+                  Print order
+                </Button>
+              ) : (
+                <Button
+                  style={{
+                    textTransform: "capitalize",
+                    padding: "15px 50px",
+                    backgroundColor: "#CCCCCC",
+                    color: "#fff",
+                    fontWeight: "500",
+                    fontSize: "20px",
+                    lineHeight: "24px",
+                  }}
+                >
+                  Print order
+                </Button>
+              )}
+            </div>
           </div>
           <div
             className="overflow"
