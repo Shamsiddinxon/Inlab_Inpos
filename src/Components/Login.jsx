@@ -37,7 +37,12 @@ const Login = () => {
   return (
     <div className="login">
       <div className="login__left">
-        <form action="">
+        <form
+          action=""
+          onSubmit={(e) => {
+            Post(e);
+          }}
+        >
           <h2 className="login__title">Welcome Back</h2>
           <div>
             <label htmlFor="login-email">Email</label>
@@ -45,6 +50,7 @@ const Login = () => {
               id="login-email"
               type="email"
               placeholder="Enter your email"
+              required
               onChange={(e) => {
                 userEmailChangeHandler(e);
               }}
@@ -58,6 +64,7 @@ const Login = () => {
               type="password"
               placeholder="Enter your password"
               value={password.value}
+              required
               onChange={(e) => {
                 PasswordChangeHandler(e);
               }}
@@ -75,9 +82,7 @@ const Login = () => {
               fontSize: "16px",
               textTransform: "unset",
             }}
-            onClick={(e) => {
-              Post(e);
-            }}
+            type="submit"
           >
             Sign in
           </Button>
